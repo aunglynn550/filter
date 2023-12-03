@@ -1,0 +1,50 @@
+:root{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 14px;
+    color: black;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.conference{   
+    padding: 1rem;
+}
+
+.conference:not(:last-child):not(:has(+ [hidden])){
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.conference-category{
+    font-weight: bold;
+}
+
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border: 0;
+    padding: 2rem;
+}
+.filter-btn{
+    background: none;
+    border: 0;
+    border-radius: .2rem;
+}
+
+.filter-btn:hover,
+.filter-btn:focus{
+    background-color: #ccc;
+}
+
+.filter-btn.active{
+    pointer-events: none;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 .5rem rgb(0 0 0 / .2);
+}

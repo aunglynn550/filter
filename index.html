@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+        <h1>Tech Conferences</h1>
+
+        <div class="filter filter-button-group">
+            <button class="filter-btn active" data-filter="*">all</button>
+            <button class="filter-btn" data-filter=".frontend">frontend</button>
+            <button class="filter-btn" data-filter=".backend">backend</button>
+            <button class="filter-btn" data-filter=".fullstack">fullstack</button>
+        </div>
+
+        <div class="conference-list grid">
+            <div class="conference fullstack" data-category=".fullstack">
+                <h2 class="conference-name">THAT Conference</h2>
+                <div class="conference-details">
+                    <span class="conference-date">January 30th-February 1st</span>
+                    <span class="conference-category">Full stack</span>
+                </div>     
+            </div>
+            <div class="conference frontend" data-category=".frontend">
+                <h2 class="conference-name">DEV World</h2>
+                <div class="conference-details">
+                    <span class="conference-date">February 29th-March 1st</span>
+                    <span class="conference-category">frontend</span>
+                </div>     
+            </div>
+            <div class="conference backend" data-category=".backend">
+                <h2 class="conference-name">SQLBits</h2>
+                <div class="conference-details">
+                    <span class="conference-date">March 29th-Aprial 1st</span>
+                    <span class="conference-category">backend</span>
+                </div>     
+            </div>
+            <div class="conference frontend" data-category=".frontend">
+                <h2 class="conference-name">CSS Day</h2>
+                <div class="conference-details">
+                    <span class="conference-date">March 29th-Aprial 1st</span>
+                    <span class="conference-category">frontend</span>
+                </div>     
+            </div>
+            <div class="conference fullstack" data-category=".fullstack">
+                <h2 class="conference-name">SmashingConf Freiburg</h2>
+                <div class="conference-details">
+                    <span class="conference-date">March 29th-Aprial 1st</span>
+                    <span class="conference-category">Full stack</span>
+                </div>     
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</body>
+</html>
